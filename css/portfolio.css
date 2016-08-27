@@ -155,6 +155,9 @@ p {
     text-align: center; }
   #content .spacer {
     height: 400px; }
+  #content .fullbleed {
+    width: 100%;
+    margin-bottom: 1em; }
 
 nav {
   font-size: 14px;
