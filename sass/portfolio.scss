@@ -1,8 +1,32 @@
 @import "common";
 $font-decor: "Old Standard TT", serif;
 
+@mixin tooltip($content) {
+  position: relative;
+  &:after {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    line-height: 20px;
+    bottom: -40px;
+    left: -35px;
+    background: $offblack;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    content: $content;
+    transition: opacity $fast ease;
+    opacity: 0;
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
+}
+
 .date {
-  font-size: 14px;
   font-family: $font-decor;
   font-style: italic;
 }
@@ -11,7 +35,6 @@ $font-decor: "Old Standard TT", serif;
   text-transform: uppercase;
   font-family: $font-body;
   font-weight: 600;
-  font-size: 14px;
   letter-spacing: 1px;
 }
 
@@ -147,6 +170,49 @@ $font-decor: "Old Standard TT", serif;
 
 #content {
   width: 80vw;
+  font-size: 14px;
   margin: 0 auto;
   padding: 5vh 5vw;
+  padding-bottom: 0;
+  max-width: 1024px;
+
+  #logo {
+    text-align: center;
+  }
+
+  .spacer {
+    height: 400px;
+  }
+}
+
+nav {
+  font-size: 14px;
+  height: 8vh;
+  line-height: 10vh;
+  padding: 10px 40px;
+
+  .nameplate {
+    font-family: $font-decor;
+    font-size: 2em;
+  }
+
+  ul {
+    float: right;
+    li {
+      display: inline-block;
+      margin-right: 1em;
+
+      .blog {
+        @include tooltip('Coming soon');
+      }
+    }
+  }
+}
+
+#copyright {
+  padding: 10px 40px;
+  height: 4vh;
+  line-height: 4vh;
+  font-size: 12px;
+  color: $grey;
 }
