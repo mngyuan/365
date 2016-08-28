@@ -30,7 +30,7 @@ body, html {
 a {
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease, color 0.3s ease;
   font-weight: 600; }
   a:hover {
     color: black; }
@@ -48,6 +48,9 @@ h1, h2, h3 {
 
 p {
   line-height: 1.5; }
+
+article {
+  max-width: 36em; }
 
 .date {
   font-family: "Old Standard TT", serif;

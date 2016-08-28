@@ -37,7 +37,8 @@ body, html {
 a {
   text-decoration: none;
   color: inherit;
-  transition: all $fast ease;
+  transition: opacity $fast ease,
+              color $fast ease;
   font-weight: 600;
   &:hover {
     color: black;
@@ -62,4 +63,8 @@ h1, h2, h3 {
 
 p {
   line-height: 1.5;
+}
+
+article {
+  max-width: 36em;
 }
