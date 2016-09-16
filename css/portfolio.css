@@ -50,7 +50,9 @@ p {
   line-height: 1.5; }
 
 article {
-  max-width: 36em; }
+  margin: 0 auto; }
+  article p {
+    max-width: 36em; }
 
 .date {
   font-family: "Old Standard TT", serif;

@@ -66,5 +66,9 @@ p {
 }
 
 article {
-  max-width: 36em;
+  margin: 0 auto;
+
+  p {
+    max-width: 36em;
+  }
 }
