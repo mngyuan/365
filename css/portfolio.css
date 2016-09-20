@@ -177,26 +177,6 @@ nav {
     nav ul li {
       display: inline-block;
       margin-right: 1em; }
-      nav ul li .blog {
-        position: relative; }
-        nav ul li .blog:after {
-          position: absolute;
-          width: 100px;
-          height: 30px;
-          padding: 5px 10px;
-          box-sizing: border-box;
-          line-height: 20px;
-          bottom: -40px;
-          left: -35px;
-          background: #454545;
-          color: white;
-          font-size: 12px;
-          text-align: center;
-          content: "Coming soon";
-          transition: opacity 0.3s ease;
-          opacity: 0; }
-        nav ul li .blog:hover:after {
-          opacity: 1; }
 
 #copyright {
   padding: 10px 40px;

@@ -206,10 +206,6 @@ nav {
     li {
       display: inline-block;
       margin-right: 1em;
-
-      .blog {
-        @include tooltip('Coming soon');
-      }
     }
   }
 }
